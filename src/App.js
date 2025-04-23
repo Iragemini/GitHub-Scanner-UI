@@ -1,10 +1,16 @@
-import './App.css';
+import { Container, Typography, Box } from '@mui/material';
+import RepositoriesTable from './components/RepositoriesTable';
 
 function App() {
   return (
-    <div className="app">
-      <h1>GitHub Scanner</h1>
-    </div>
+    <Container maxWidth="lg">
+      <Box sx={{ my: 4 }}>
+        <Typography variant="h3" component="h1" gutterBottom>
+          GitHub Scanner
+        </Typography>
+        <RepositoriesTable />
+      </Box>
+    </Container>
   );
 }
 
